@@ -8,16 +8,16 @@ Desplegar un servidor web con HTTPD usando Docker.
 
 ### 1. Ejecutar el container
 
-\`\`\`bash
+```bash
 docker run -d -p 8081:80 --name mi-apache httpd
-\`\`\`
+```
 
 **Explicación:** Este comando crea y ejecuta un container con httpd en segundo plano (-d), mapeando el puerto 8081 de mi máquina al puerto 80 del container.
 
 **Salida:**
-\`\`\`
+```
 c02f3d8e5d483b80594417b901da9a34149f779b9ab9048960c1fd1b76988cf4
-\`\`\`
+```
 
 **Screenshot:**
 
@@ -25,9 +25,9 @@ c02f3d8e5d483b80594417b901da9a34149f779b9ab9048960c1fd1b76988cf4
 
 ### 2. Verificar que está corriendo
 
-\`\`\`bash
+```bash
 docker ps
-\`\`\`
+```
 
 **Screenshot:**
 
@@ -41,9 +41,9 @@ Accedí a `http://localhost:8081` y obtuve:
 
 Accediendo a los logs
 
-\`\`\`bash
+```bash
 docker logs mi-apache
-\`\`\`
+```
 
 **Screenshot:**
 
@@ -55,25 +55,25 @@ Los logs generados son:
 
 Deteniendo el contenedor
 
-\`\`\`bash
+```bash
 docker stop mi-apache
-\`\`\`
+```
 
 ![Deteniendo contenedor](screenshots/docker-stop.png)
 
 Eliminando el contenedor
 
-\`\`\`bash
+```bash
 docker rm mi-apache
-\`\`\`
+```
 
 ![Eliminando contenedor](screenshots/docker-rm.png)
 
 Verificando contenedores existentes
 
-\`\`\`bash
+```bash
 docker ps -a
-\`\`\`
+```
 
 ![Contenedores](screenshots/docker-ps-a.png)
 
