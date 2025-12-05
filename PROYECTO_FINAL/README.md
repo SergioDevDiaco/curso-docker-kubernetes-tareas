@@ -20,7 +20,7 @@ microk8s status
 ```
 **Screenshot:**
 
-![Microk8s](screenshots/microk8s.png)
+![Microk8s](screenshots/microk8s-status.png)
 
 ### 1.3 Proyecto integrador
 ```bash
